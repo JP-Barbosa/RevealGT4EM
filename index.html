@@ -27,7 +27,7 @@
 				<br>
 				<br>
 				<hTitle>Game-Theoretical Models for Energy Markets</hTitle>
-				<hNameBox> Julia Barbosa</hNameBox>
+				<hNameBox> Júlia Barbosa</hNameBox>
 				<p class = "small-text">
 					<img src="imgs/QR.svg" height="150" >
 					<br>
@@ -77,7 +77,7 @@
 						</div>
 						<br>
 						<div class="fragment" style="font-size: 25pt;">
-							<mark>Is each player payoff function is known by every other player?</mark>
+							<mark>Is each players payoff function known by every other player?</mark>
 							<table class="fragment">
 								<tr> 
 									<td>
@@ -151,14 +151,14 @@
 							<br>
 						</div>
 						<div style="font-size: 20pt; margin: 20pt;">
-						<b>Equilibrium Problems:</b> Quantity and price are variables.
+						<b>Equilibrium Problems:</b> quantity and price are variables.
 						</div>
 					</section>
 				</section>
 
 				<section>
 					<section>
-						<h7>Example 1: Nash Equilibria</h7>
+						<h7>Example 1: Nash Equilibrium</h7>
 						<hTitle>Cournout Competition in Local Energy Markets</hTitle>
 						<div class="r-stack">
 							<img class="fragment" src="imgs/cornout/producers1.svg" height="300">
@@ -167,7 +167,7 @@
 					</section>
 					<section>
 						<div class="column">
-							Each producer wants to maximize its profit:
+							Each producer wants to maximize their profit:
 							<br>
 							<p style="font-size: 15pt;text-align: center;">
 								
@@ -194,7 +194,7 @@
 						</div>
 						<div class="small-text fragment">
 							Implementation in Julia available <a href="https://github.com/JP-Barbosa/GT4EM/blob/main/src/ex1.jl">
-							here </a>.
+							here</a>.
 						</div>
 					</section>
 				</section>
@@ -202,7 +202,7 @@
 				<section>
 					<section>
 						<h7>Example 2: Generalized Nash Equilibria</h7>
-						<hTitle>Cornout Competition with Emissions Constraints</hTitle>
+						<hTitle>Cornout Competition with CO\(_2\) Emission Constraint</hTitle>
 						<div class="r-stack">
 							<img class="fragment" src="imgs/cornout/complete_2.svg" height="300">
 						</div>
@@ -224,9 +224,9 @@
 						\[
 						 0 \leq M - \sum_{p'} x_{p'}e_{p'}  \perp \phi_p \geq 0 \; \; \forall p\\
 						\]
-						* The strategy set of each player depends on the strategies of the other players. (GNE)
+						The strategy set of each player depends on the strategies of the other players. (GNE)
 						<br>
-						* This system is non-square !!!
+						This system is non-square !!!
 						<br>
 						<br>
 						<mark>
@@ -234,7 +234,7 @@
 						</mark>
 						<br>
 						\[ \phi_p = \phi  \; \; \forall p \]
-						* The system is now square and has an unique NE.
+						The system is now square and has an unique NE.
 					</p>
 					<p class= "fragment" style="font-size: 15pt; text-align: center;">
 						\[\begin{aligned}
@@ -250,7 +250,7 @@
 
 					<div class="small-text fragment">
 							Implementation in Julia available <a href="https://github.com/JP-Barbosa/GT4EM/blob/main/src/ex2.jl">
-							here </a>.
+							here</a>.
 
 					</section>
 				</section>
@@ -284,13 +284,13 @@
 						</div>
 						
 						<p class ="fragment" style="font-size: 20pt;text-align: left;"> 
-							* Note that the NE problem is now a constraint of the leader problem.
+							Note that the NE problem is now a constraint of the leader problem.
 							<br>
 							<br>	
-							* This is a bilevel problem, where the lower level is a NEP.
+							This is a bilevel problem, where the lower level is a NEP.
 							<br>
 							<br>	
-							* Complementarity conditions can be replaced by a non-linear transformation.
+							Complementarity conditions can be replaced by a non-linear transformation.
 						</p>
 						
 						<div class="small-text fragment">
@@ -306,7 +306,7 @@
 
 				<section>
 					<section>
-						<h7>Example 4: EPEC Power Market Model.
+						<h7>Example 4: EPEC Power Market Model
 						</h7>
 						<hTitle>Strategic quantity decisions by Generators</hTitle>
 						<div class="r-stack">
@@ -325,7 +325,7 @@
 					</section>
 
 					<section>
-						Formulation of Follower Problem (TSO):
+						Formulation of follower problem:
 						<p class="fragment" style="font-size: 15pt; text-align: center;">
 						\[\begin{aligned}
 						&\max_{s_n} \sum_{n \in N} \phi_n s_n \\
@@ -334,7 +334,7 @@
 						& - s_1 - C \leq 0 \\
 						\end{aligned} \]
 						</p>
-						MPEC Formulation of Leader at node \(n\) Problem:
+						MPEC Formulation of leader at node \(n\) Problem:
 						<p class="fragment" style="font-size: 15pt; text-align: center;">
 						\[\begin{aligned}
 						&\max_{x_{n}} \pi_{n} x_{n}  \\
@@ -357,25 +357,25 @@
 
 					<h5>The most common strategy is <mark>Diagonalization</mark></h5>
 					<p class="fragment l">
-						1. Define a initial set of strategies for the leaders.
+						1. Define a initial set of strategies for the leaders 
 					</p>
 					<p class="fragment l">
-						2. While not convergence and not max iterations:
+						2. While not convergence and not max iterations
 					</p>
 					<p class="fragment l">
 						3. For each leader \(l\):
 						<br>
-						&nbsp; &nbsp; i. Solver the Leader \(l\) MPEC problem, given the strategies of the other leaders.
+						&nbsp; &nbsp; i. Solver the Leader \(l\) MPEC problem, given the strategies of the other leaders
 							<br>
-						&nbsp; &nbsp; ii. Reset the strategies of the leader \(l\) with the new strategies.
+						&nbsp; &nbsp; ii. Reset the strategies of the leader \(l\) with the new strategies
 					</p>
 					<p class="fragment l">
 						4. Check convergence
 					</p>
 					<p class="fragment l">
-						5. If interation limit reached &rarr; algotithm failed.
+						5. If interation limit reached &rarr; algotithm failed
 					<p class="fragment l">
-						6. If not converged, go to 2.
+						6. If not converged, go to 2, else finished
 					</p>
 
 					<p class="small-text fragment">
@@ -389,11 +389,11 @@
 			<hTitle>Summary</hTitle>
 			<div>
 				<ul style="font-size: 18pt;">
-					<li>Game Theoretical fomulations allow to model imperfect markets</li>
-					<li>Given convex objetive functions and constraints qualifications, multiple interdependet optmization problems can be replaced by their KKT-Conditions </li>
-					<li>GNE problems can lead to non-square models, real world assumptions might help to eliminate variables.</li>
-					<li>MPECs problem can be solved with non-linear transformation of complementarity constraints</li>
-					<li>Diagonalization can be used to solve EPEC problems</li>
+					<li class="fragment">Game theoretical fomulations allow to model imperfect markets.</li>
+					<li class="fragment">Given convex objetive functions and constraint qualifications, multiple interdependent optmization problems can be replaced by their KKT-Conditions. </li>
+					<li class="fragment">GNE problems can lead to non-square models, real world assumptions may help to eliminate variables.</li>
+					<li class="fragment">MPECs can be solved with non-linear transformations of complementarity constraints.</li>
+					<li class="fragment">EPECs can be solved used diagonalization. </li>
 				</ul>
 			</div>
 			</section>
@@ -406,14 +406,14 @@
 				
 				<hTitle>Thank you!</hTitle>
 
-				<p>GIT Repo with Julia examples:
+				<p> Julia examples:
 					<br>
 				<a  href="https://github.com/JP-Barbosa/GT4EM">
 					https://github.com/JP-Barbosa/GT4EM
 				</a>
 				</p>
 
-				<p>This Presentation Link
+				<p>This presentation
 					<br>
 				<a  href="https://jp-barbosa.github.io/RevealGT4EM/">
 					https://jp-barbosa.github.io/RevealGT4EM/
@@ -422,7 +422,7 @@
 				<img src="imgs/QR.svg" height="150">
 			
 
-				<p>Questions, Comments or Ideas?
+				<p>Questions, comments or ideas?
 					<br>
 				<a  href="mailto:mail@juliabarbosa.net">
 					mail@juliabarbosa.net</a>
