@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Game-Theoritical Models for Energy Markets</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="my.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+				<div style="position: absolute; top: -10%;
+  right: 0; border:10px;">
+					<img src="imgs/tuda_logo.svg" height="100" >
+				</div>
+
+				<br>
+				<br>
+				<hTitle>Game-Theoritical Models for Energy Markets</hTitle>
+				<hNameBox> Julia Barbosa</hNameBox>
+				</section>
+
+				<section>
+					<section>
+						<hTitle>What is Game Theory? </hTile>
+						<hText> 
+							„Game theory is the study of multiperson decision problems.“
+						</hText>
+						<p class="small-text">
+							Gibbons, R. (1992). A Primer in Game Theory
+						</p>
+					</section>
+
+					<section>
+					<div class = "r-stack">
+						<img class="fragment" src="imgs/GameTransition/game1.svg" height="500" class="center-image" >				
+						<img class="fragment" src="imgs/GameTransition/game2.svg" height="500" class="center-image" >				
+						<img class="fragment" src="imgs/GameTransition/game3.svg" height="500" class="center-image" >				
+						<img class="fragment" src="imgs/GameTransition/game4.svg" height="500" class="center-image" >				
+					</div>
+
+					<p class = "fragment small-text" >
+					Normal-Form	Representation:
+					\[ \mathcal{G} = \{N,S = S_1 \times ... \times S_N, U:S \rightarrow \mathbb{R}^N\}
+					\]
+					</p>
+					</section>
+					
+					<section>
+						<div class="fragment" style="font-size: 25pt;">
+						<mark> Does the players play without observing the other players moves?</mark>
+							<table class= "fragment" width="80%">
+								<tr> 
+									<td>
+										Yes &rarr; <b>Static</b>
+									</td>
+									<td>
+										No &rarr; <b>Dynamic</b>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<br>
+						<div class="fragment" style="font-size: 25pt;">
+							<mark>Is each player payoff function is know by every other player?</mark>
+							<table class="fragment">
+								<tr> 
+									<td>
+										Yes &rarr; <b>Complete</b> Information
+									</td>
+									<td>
+										No &rarr; <b>Incomplete</b> Information
+									</td>
+								</table>
+						</div>
+						<br>
+						<div class="fragment" style="font-size: 25pt;">
+							<mark> Does the players know the full history of the game at each moves?	</mark> 
+							<table class="fragment">
+								<tr> 
+									<td>
+										Yes &rarr; <b>Perfect</b> Information
+									</td>
+									<td>
+										No &rarr; <b>Imperfect</b> Information
+									</td>
+								</table>
+						</div>
+					</section>
+
+				
+				</section>
+				<section>
+					<section>
+						<h7>Illustrative Example</h7> 
+						<hTitle>The Peace War Game*</hTitle>
+						<div class="r-stack">
+							<img src="imgs/peaceWar/s0.svg" height="300">
+							<img class="fragment fade-in-then-out" src="imgs/peaceWar/s2.svg" height="300">
+							<img class="fragment fade-in-then-out" src="imgs/peaceWar/s3.svg" height="300">
+							<img class="fragment fade-in-then-out" src="imgs/peaceWar/s4.svg" height="300">
+							<img class="fragment fade-in-then-out" src="imgs/peaceWar/s5.svg" height="300">
+							<div class ="fragment fade-in-then-out" style="background-color: white;">
+								What if B plays first and A observes B's move before playing?
+							</div>
+							<img class="fragment fade-in-then-out" src="imgs/peaceWar/s0.svg" height="300">
+							<img class="fragment fade-in-then-out" src="imgs/peaceWar/s6.svg" height="300">
+						</div>
+						<p style="font-size: 20pt;">
+							If players are rational, what is the most likely outcome?
+						</p>
+						<p class="fragment">
+							<mark>It depends on the game conditions!</mark>
+						</p>
+
+						<div class="small-text l">
+							*Modified
+						</div>
+					</section>
+					<section>
+						<h3> <mark> Nash-Equilibrium (NE) </mark></h3>
+						<br>
+						Steady state where no player can benefit by <b>unilaterally</b> changing its strategy.
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<hTitle style="border: 0pt solid;margin: 10pt">Market Equilibrium and Perfect Markets</hTitle>
+						<div style="font-size: 20pt; margin: 5pt;">
+							Consumers and producers are price-takers
+						</div>   
+						<img src="imgs/MarketEQ.svg" height="300" style="border: 0pt solid; margin: 0pt;">
+						<div class=" small-text" style="margin: 0pt;border: 0pt solid;">
+							<b>Social Welfare</b> = Consumer Utility(CS) - Production Cost (PC)
+							<br>
+						</div>
+						<div style="font-size: 20pt; margin: 20pt;">
+						<b>Equilibrium Problems:</b> Quantity and price are variables.
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h7>Example 1: Nash Equilibria</h7>
+						<hTitle>Cournout Competition in Local Energy Markets</hTitle>
+						<div class="r-stack">
+							<img class="fragment" src="imgs/cornout/producers1.svg" height="300">
+							<img class="fragment" src="imgs/cornout/consumers.svg" height="300">
+						</div>
+					</section>
+					<section>
+						<div class="column">
+							Each producer wants to maximize its profit:
+							<br>
+							<p style="font-size: 15pt;text-align: center;">
+								
+								\[\begin{aligned}
+								\max_{x_p} &\left(\pi - k^m_p\right) x_p \\
+								\text{s.t.}&\\
+								& \sum_{p' \in P}x_{p'} = D \\
+								& \pi = a(D_0 - D)\\
+								& c_p - x_p \geq 0
+								\end{aligned}\]
+							</p>
+						</div>
+						<div class="column fragment">
+							The KKT-Conditions constitutes a Mixed Complementarity Problem (MCP):
+							<br>
+							<p style="font-size: 15pt; text-align: center;">
+							\[\begin{aligned}
+							 0 = \pi - aD - k_p^m -\alpha_p &\perp x_p \text{ free} \; \; \forall p\\
+							 0 \leq c_p- x_p &\perp \alpha_p \geq 0 \; \; \forall p\\
+							 0 = \pi - a(D_0 -D) &\perp \pi \text{ free}\\
+							 0 = \sum_{p' \in P} x_{p'} - D &\perp D \text{ free} \\
+							\end{aligned} \]
+							</p>
+						</div>
+						<div class="small-text">
+							Implementation in Julia available <a href="https://github.com/JP-Barbosa/GT4EM/blob/main/src/ex1.jl">
+							here </a>.
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h7>Example 2: Generalized Nash Equilibria</h7>
+						<hTitle>Cornout Competition with emissions constraints</hTitle>
+						<div class="r-stack">
+							<img class="fragment" src="imgs/cornout/complete_2.svg" height="300">
+						</div>
+					</section>
+					<section>
+						The formulation is now:
+						<div class="r-stack">
+							<p class= " fragment fade-in-then-out" style="font-size: 15pt; text-align: center;">
+						\[\begin{aligned}
+						 0 = \pi - aD - k_p^m &\perp x_p \text{ free} \; \;  \forall p\\
+						 0 \leq c_p- x_p &\perp \alpha_p \geq 0 \; \; \forall p \\
+						 0 \leq M - \sum_{p'} x_{p'}e_{p'} & \perp \phi_p \geq 0 \; \; \forall p\\
+						 0 = \pi - a(D_0 -D) &\perp \pi \text{ free} \\
+						 0 = \sum_{p' \in P} x_{p'} - D &\perp D \text{ free} \\
+						 \\
+						 \end{aligned} \]
+					</p>
+					<p class="fragment fade-in-then-out" style="font-size: 15pt; border: 2pt solid black; background-color: white; margin: 2pt;">
+						\[
+						 0 \leq M - \sum_{p'} x_{p'}e_{p'}  \perp \phi_p \geq 0 \; \; \forall p\\
+						\]
+						* The strategy set of each player depend on the strategies of the other players. (GNE)
+						<br>
+						* This system is non-square !!!
+						<br>
+						<br>
+						<mark>
+							Note that if a trading system is implemented, the price of the permits is the same for all producers, i.e, 
+						</mark>
+						<br>
+						\[ \phi_p = \phi  \; \; \forall p \]
+						* The system is now square and has a unique NE.
+					</p>
+					<p class= "fragment" style="font-size: 15pt; text-align: center;">
+						\[\begin{aligned}
+						 0 = \pi - aD - k_p^m &\perp x_p \text{ free} \; \;  \forall p\\
+						 0 \leq c_p- x_p &\perp \alpha_p \geq 0 \; \; \forall p \\
+						 0 \leq M - \sum_{p'} x_{p'}e_{p'} & \perp \phi \geq 0 \; \; \forall p\\
+						 0 = \pi - a(D_0 -D) &\perp \pi \text{ free} \\
+						 0 = \sum_{p' \in P} x_{p'} - D &\perp D \text{ free} \\
+						 \\
+						 \end{aligned} \]
+					</p>
+					</div>
+
+					<div class="small-text fragment">
+							Implementation in Julia available <a href="https://github.com/JP-Barbosa/GT4EM/blob/main/src/ex2.jl">
+							here </a>.
+
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h7>Example 3: Dynamic Game Single Leader </h7>
+						<hTitle>Stackelberg Competition</hTitle>
+						<div class="r-stack">
+							<img class="fragment" src="imgs/cornout/leader.svg" height="300">
+							<img class="fragment" src="imgs/cornout/producers2.svg" height="300">
+							<img class="fragment" src="imgs/cornout/consumers.svg" height="300">
+						</div>
+						<p class="small-text">
+							Leader playes first, followers observe and then play a cornout-competition game.
+						</p>
+					</section>
+
+					<section>
+						The problem can be formulated as:
+
+						<div class="r-stack">
+							<p class= " fragment" style="font-size: 15pt; text-align: center;">
+						\[\begin{aligned}
+						&\max_{x_l} \pi x_l - k_l^m x_l \\
+						& \text{s.t.} \\
+						&c_l - x_l \geq 0 \\
+						&\text{NE Problem from Example 1}
+						\end{aligned} \]
+						</p>
+						</div>
+						
+						<p class ="fragment" style="font-size: 20pt;text-align: left;"> 
+							* Note that the NE problem is now a constraint of the leader problem.
+							<br>
+							<br>	
+							* This is a bilevel problem, where the lower level problem is a NEP.
+							<br>
+							<br>	
+							* Can be solved a non-linear transformation of the complementarity conditions and solved by a non-linear solver.
+						</p>
+						
+						<div class="small-text fragment">
+							Implementation in Julia available <a href="https://github.com/JP-Barbosa/GT4EM/blob/main/src/ex3.jl">
+								here</a>.
+							</div>
+
+						</section>
+
+
+
+				</section>
+
+				<section>
+					<section>
+						<h7>Example 4: EPEC Power Market Model.
+						</h7>
+						<hTitle>Strategic quantity decisions by Generators</hTitle>
+						<div class="r-stack">
+							<img class="fragment" src="imgs/cornout/leader2.svg" height="300">
+							<img class="fragment" src="imgs/cornout/producers3.svg" height="300">
+							<img class="fragment" src="imgs/cornout/consumers.svg" height="300">
+						</div>
+						<p class="small-text">
+							Two producers A and B (leaders) maximize their profits from energy sales.
+							<br>
+							TSO (follower) maximizes profit from energy arbitrage between nodes.
+						</p>
+						<p class="small-text">
+							Adapted from Complementarity Modeling in Energy Markets, by Gabriel A., Conejo A., Fuller J., Hobbs B. and Ruiz C. (2013)
+						</p> 
+					</section>
+					
+					<section>
+					<h6>
+						How solve a EPEC?
+					</h63>
+
+					<h5>The most common strategy is <mark>Diagonalization</mark></h5>
+					<p class="fragment l">
+						1. Define a initial set of strategies for the leaders.
+					</p>
+					<p class="fragment l">
+						2. While not convergence and not max iterations:
+					</p>
+					<p class="fragment l">
+						3. For each leader \(l\):
+						<br>
+						&nbsp; &nbsp; i. Solver the Leader \(l\) MPEC problem, given the strategies of the other leaders.
+							<br>
+						&nbsp; &nbsp; ii. Reset the strategies of the leader \(l\) with the new strategies.
+					</p>
+					<p class="fragment l">
+						4. Check convergence
+					</p>
+					<p class="fragment l">
+						5. If interation limit reached &rarr; algotithm failed.
+					<p class="fragment l">
+						6. If not converged, go to 2.
+					</p>
+
+					<p class="small-text fragment">
+							Implementation in Julia available <a href="https://github.com/JP-Barbosa/GT4EM/blob/main/src/ex4.jl">
+								here</a>.
+					</p>
+					</section>
+			</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
+				animate: {
+					autoplay: true,
+				}
+			});
+		</script>
+	</body>
+</html>

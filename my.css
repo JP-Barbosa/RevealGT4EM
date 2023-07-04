@@ -1,0 +1,130 @@
+.column {
+    float: left;
+    width: 50%;
+    text-align: left;
+  }
+
+
+table, th, td {
+  border: 0px solid;
+}
+
+td {
+  text-align: center !important;
+  font-size: 25pt;
+}
+
+mark {
+  background-color: #d4eced;
+  color: black;
+}
+p {
+  font-size: 15pt;
+}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .small-text {
+    font-size: 12pt;
+    padding: 10px;
+    width: 100%;
+    margin: 30px auto;
+    text-transform: none;
+    text-align: center;
+    font-weight: normal;
+    font-family: "Arial", "Sans-serif";
+  }
+
+  .top-right-image {
+    position: absolute;
+    right: 0;
+    top: -10;
+  }
+
+hTitle{
+    display: block;
+    font-size: 42pt;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Arial Black", "Sans-serif";
+}
+
+
+
+hNameBox{
+    display: block;
+    font-size: 18pt;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: right;
+    font-family: "Arial", "Sans-serif";
+
+}
+
+hText{
+    display: block;
+    font-size: 18pt;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    text-transform: none;
+    font-weight: normal;
+    font-family: "Arial", "Sans-serif";
+}
+
+h7 {
+    display: block;
+    font-size: .67em;
+    margin-top: 0.5em;
+    margin-bottom: -0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+h8
+ {
+    display: block;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: -0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+.multiCol {
+  display: table; 
+  width: 100%;
+  text-align: center;
+}
+
+.col {
+  display: table-cell;
+  vertical-align: top;
+  text-align: center;
+  border:1px solid;
+}
+
+ .l {
+    text-align: left;
+  }
+
