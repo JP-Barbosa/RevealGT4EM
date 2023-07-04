@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="119.9708mm"
+   height="102.56638mm"
+   viewBox="0 0 119.9708 102.56638"
+   version="1.1"
+   id="svg328"
+   sodipodi:docname="game.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:ns11="http://www.iki.fi/pav/software/textext/">
+  <sodipodi:namedview
+     id="namedview330"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.2938725"
+     inkscape:cx="214.85889"
+     inkscape:cy="199.78785"
+     inkscape:window-width="1600"
+     inkscape:window-height="871"
+     inkscape:window-x="5111"
+     inkscape:window-y="360"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs325">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1">
+      <path
+         d="M 136.86425,137.64189 H 591.00472 V 525.68315 H 136.86425 Z"
+         id="path449" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-1">
+      <path
+         d="M 136.86425,137.64189 H 591.00472 V 525.68315 H 136.86425 Z"
+         id="path690" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-2"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-7.195404,-48.777184)">
+    <g
+       id="g1849"
+       inkscape:label="Game">
+      <g
+         transform="matrix(0.52916701,0,0,0.52916701,42.604838,66.140089)"
+         ns11:version="1.8.2"
+         ns11:texconverter="pdflatex"
+         ns11:pdfconverter="inkscape"
+         ns11:text="$\\mathcal{G}$"
+         ns11:preamble="C:\Users\Julia Barbosa\AppData\Roaming\inkscape\extensions\inkscapeMadeEasy\basicLatexPackages.tex"
+         ns11:scale="1.5"
+         ns11:alignment="middle center"
+         ns11:stroke-to-path="0"
+         ns11:jacobian_sqrt="0.529167"
+         id="g2057">
+        <defs
+           id="id-a3ad9856-e916-4582-92e0-e666c8411dc9">
+          <g
+             id="id-b5bfa8d8-87e7-415d-95c9-c2698ea53f30">
+            <g
+               id="id-4509e8b4-7989-4705-9cda-5f07c261e039" />
+            <g
+               id="id-13a4a68a-0aef-418c-94b3-dba49466ae8f">
+              <path
+                 d="M 4.34375,-1.578125 C 4.078125,-0.671875 3.8125,-0.21875 3.71875,-0.0625 3.328125,0.625 3.125,0.640625 2.78125,0.640625 c -0.171875,0 -0.875,-0.03125 -1.46875,-0.4375 -0.4375,0.03125 -0.796875,0.375 -0.796875,0.484375 0,0.09375 0.6875,0.5 1.609375,0.5 0.71875,0 1.890625,-0.375 2.640625,-2 C 5.03125,-1.375 5.1875,-1.9375 5.21875,-2.0625 5.421875,-2.75 5.625,-3.546875 5.625,-3.59375 c 0,-0.0625 -0.015625,-0.078125 -0.109375,-0.078125 -0.078125,0 -0.25,0.046875 -0.46875,0.1875 -0.21875,0.140625 -0.234375,0.1875 -0.296875,0.4375 -0.109375,0.34375 -0.6875,1.828125 -1.921875,1.828125 -0.96875,0 -1.546875,-0.796875 -1.546875,-1.921875 0,-0.765625 0.3125,-1.796875 0.890625,-2.484375 C 2.4375,-5.953125 2.9375,-6.484375 4.0625,-6.484375 c 0.1875,0 0.46875,0.03125 0.71875,0.109375 0.109375,0.03125 0.359375,0.109375 0.359375,0.4375 0,0.328125 -0.515625,0.96875 -0.5625,1.03125 -0.03125,0.046875 -0.0625,0.078125 -0.0625,0.125 0,0.0625 0.046875,0.0625 0.109375,0.0625 0.296875,0 0.625,-0.265625 0.890625,-0.640625 0.078125,-0.109375 0.46875,-0.65625 0.46875,-1 0,-0.40625 -0.296875,-0.515625 -0.421875,-0.546875 -0.375,-0.125 -0.703125,-0.125 -0.84375,-0.125 -2.25,0 -4.28125,1.984375 -4.28125,4.3125 0,1.015625 0.453125,2.046875 1.734375,2.046875 0.75,0 1.515625,-0.390625 2.171875,-0.90625 z m 0,0"
+                 id="id-9f58dee6-532d-49e2-ac41-8f346634ec7f" />
+            </g>
+          </g>
+        </defs>
+        <g
+           fill="#000000"
+           fill-opacity="1"
+           id="id-fcb409f8-8c79-457a-aabe-acb317664363"
+           transform="translate(-149.15,-127.734)">
+          <g
+             transform="translate(148.712,134.765)"
+             id="g2054">
+            <path
+               d="M 4.34375,-1.578125 C 4.078125,-0.671875 3.8125,-0.21875 3.71875,-0.0625 3.328125,0.625 3.125,0.640625 2.78125,0.640625 c -0.171875,0 -0.875,-0.03125 -1.46875,-0.4375 -0.4375,0.03125 -0.796875,0.375 -0.796875,0.484375 0,0.09375 0.6875,0.5 1.609375,0.5 0.71875,0 1.890625,-0.375 2.640625,-2 C 5.03125,-1.375 5.1875,-1.9375 5.21875,-2.0625 5.421875,-2.75 5.625,-3.546875 5.625,-3.59375 c 0,-0.0625 -0.015625,-0.078125 -0.109375,-0.078125 -0.078125,0 -0.25,0.046875 -0.46875,0.1875 -0.21875,0.140625 -0.234375,0.1875 -0.296875,0.4375 -0.109375,0.34375 -0.6875,1.828125 -1.921875,1.828125 -0.96875,0 -1.546875,-0.796875 -1.546875,-1.921875 0,-0.765625 0.3125,-1.796875 0.890625,-2.484375 C 2.4375,-5.953125 2.9375,-6.484375 4.0625,-6.484375 c 0.1875,0 0.46875,0.03125 0.71875,0.109375 0.109375,0.03125 0.359375,0.109375 0.359375,0.4375 0,0.328125 -0.515625,0.96875 -0.5625,1.03125 -0.03125,0.046875 -0.0625,0.078125 -0.0625,0.125 0,0.0625 0.046875,0.0625 0.109375,0.0625 0.296875,0 0.625,-0.265625 0.890625,-0.640625 0.078125,-0.109375 0.46875,-0.65625 0.46875,-1 0,-0.40625 -0.296875,-0.515625 -0.421875,-0.546875 -0.375,-0.125 -0.703125,-0.125 -0.84375,-0.125 -2.25,0 -4.28125,1.984375 -4.28125,4.3125 0,1.015625 0.453125,2.046875 1.734375,2.046875 0.75,0 1.515625,-0.390625 2.171875,-0.90625 z m 0,0"
+               id="id-835d7c9b-e1e6-47f9-b2d6-cb6efec2d74f" />
+          </g>
+        </g>
+      </g>
+      <path
+         style="fill:none;stroke:#3d8c90;stroke-width:7.77638px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+         clip-path="url(#clipEmfPath1-1)"
+         d="M 141.14126,331.2737 236.20748,141.14126 H 490.88386 L 585.95008,331.2737 490.88386,521.40614 H 236.20748 Z"
+         id="path696"
+         transform="matrix(0.26458333,0,0,0.26458333,-29.016595,12.359434)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.55625px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="36.359089"
+         y="64.62394"
+         id="text768"><tspan
+           sodipodi:role="line"
+           x="36.359089"
+           y="64.62394"
+           id="tspan766"
+           style="stroke-width:0.264583"><tspan
+             dx="0"
+             dy="0"
+             style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.55625px;font-family:Arial;fill:#000000;stroke-width:0.264583"
+             id="tspan764">Game </tspan></tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="119.9708mm"
+   height="102.56638mm"
+   viewBox="0 0 119.9708 102.56638"
+   version="1.1"
+   id="svg328"
+   sodipodi:docname="game.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:ns11="http://www.iki.fi/pav/software/textext/">
+  <sodipodi:namedview
+     id="namedview330"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.2938725"
+     inkscape:cx="214.85889"
+     inkscape:cy="199.78785"
+     inkscape:window-width="1600"
+     inkscape:window-height="871"
+     inkscape:window-x="5111"
+     inkscape:window-y="360"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs325">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1">
+      <path
+         d="M 136.86425,137.64189 H 591.00472 V 525.68315 H 136.86425 Z"
+         id="path449" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipEmfPath1-1">
+      <path
+         d="M 136.86425,137.64189 H 591.00472 V 525.68315 H 136.86425 Z"
+         id="path690" />
+    </clipPath>
+    <pattern
+       id="EMFhbasepattern-2"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-7.195404,-48.777184)">
+    <g
+       id="g1828"
+       inkscape:label="Players">
+      <path
+         style="fill:#8ed359;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.264583"
+         d="M 12.647776,100.11181 23.861151,77.685059 H 54.106402 L 65.319777,100.11181 54.106402,122.53856 H 23.861151 Z"
+         id="path698" />
+      <text
+         xml:space="preserve"
+         style="font-style:italic;font-variant:normal;font-weight:700;font-size:5.55625px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="27.621479"
+         y="102.32607"
+         id="text706"><tspan
+           sodipodi:role="line"
+           x="27.621479"
+           y="102.32607"
+           id="tspan704"
+           style="stroke-width:0.264583"><tspan
+             dx="0"
+             dy="0"
+             style="font-style:italic;font-variant:normal;font-weight:700;font-size:5.55625px;font-family:Arial;fill:#000000;stroke-width:0.264583"
+             id="tspan702">N</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.55625px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="33.176723"
+         y="102.32607"
+         id="text712"><tspan
+           sodipodi:role="line"
+           x="33.176723"
+           y="102.32607"
+           id="tspan710"
+           style="stroke-width:0.264583"><tspan
+             dx="0"
+             dy="0"
+             style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.55625px;font-family:Arial;fill:#000000;stroke-width:0.264583"
+             id="tspan708">Players</tspan></tspan></text>
+    </g>
+  </g>
+</svg>
