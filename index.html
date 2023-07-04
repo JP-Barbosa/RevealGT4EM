@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Game-Theoritical Models for Energy Markets</title>
+		<title>Game-Theoretical Models for Energy Markets</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -26,7 +26,7 @@
 				
 				<br>
 				<br>
-				<hTitle>Game-Theoritical Models for Energy Markets</hTitle>
+				<hTitle>Game-Theoretical Models for Energy Markets</hTitle>
 				<hNameBox> Julia Barbosa</hNameBox>
 				<p class = "small-text">
 					<img src="imgs/QR.svg" height="150" >
@@ -63,7 +63,7 @@
 					
 					<section>
 						<div class="fragment" style="font-size: 25pt;">
-						<mark> Does the players play without observing the other players moves?</mark>
+						<mark> Do the players play without observing the other player's moves?</mark>
 							<table class= "fragment" width="80%">
 								<tr> 
 									<td>
@@ -77,7 +77,7 @@
 						</div>
 						<br>
 						<div class="fragment" style="font-size: 25pt;">
-							<mark>Is each player payoff function is know by every other player?</mark>
+							<mark>Is each player payoff function is known by every other player?</mark>
 							<table class="fragment">
 								<tr> 
 									<td>
@@ -90,7 +90,7 @@
 						</div>
 						<br>
 						<div class="fragment" style="font-size: 25pt;">
-							<mark> Does the players know the full history of the game at each moves?	</mark> 
+							<mark> Do the players know the full history of the game at each move?	</mark> 
 							<table class="fragment">
 								<tr> 
 									<td>
@@ -115,14 +115,14 @@
 							<img class="fragment fade-in-then-out" src="imgs/peaceWar/s3.svg" height="300">
 							<img class="fragment fade-in-then-out" src="imgs/peaceWar/s4.svg" height="300">
 							<img class="fragment fade-in-then-out" src="imgs/peaceWar/s5.svg" height="300">
-							<div class ="fragment fade-in-then-out" style="background-color: white;">
+							<div class ="fragment fade-in-then-out" style="background-color: white; border: 1pt solid black;">
 								What if B plays first and A observes B's move before playing?
 							</div>
 							<img class="fragment fade-in-then-out" src="imgs/peaceWar/s0.svg" height="300">
 							<img class="fragment fade-in-then-out" src="imgs/peaceWar/s6.svg" height="300">
 						</div>
 						<p style="font-size: 20pt;">
-							If players are rational, what is the most likely outcome?
+							If players are rational, what is the most likely game outcome?
 						</p>
 						<p class="fragment">
 							<mark>It depends on the game conditions!</mark>
@@ -181,7 +181,7 @@
 							</p>
 						</div>
 						<div class="column fragment">
-							The KKT-Conditions constitutes a Mixed Complementarity Problem (MCP):
+							The KKT-Conditions constitute a Mixed Complementarity Problem (MCP):
 							<br>
 							<p style="font-size: 15pt; text-align: center;">
 							\[\begin{aligned}
@@ -202,7 +202,7 @@
 				<section>
 					<section>
 						<h7>Example 2: Generalized Nash Equilibria</h7>
-						<hTitle>Cornout Competition with emissions constraints</hTitle>
+						<hTitle>Cornout Competition with Emissions Constraints</hTitle>
 						<div class="r-stack">
 							<img class="fragment" src="imgs/cornout/complete_2.svg" height="300">
 						</div>
@@ -224,17 +224,17 @@
 						\[
 						 0 \leq M - \sum_{p'} x_{p'}e_{p'}  \perp \phi_p \geq 0 \; \; \forall p\\
 						\]
-						* The strategy set of each player depend on the strategies of the other players. (GNE)
+						* The strategy set of each player depends on the strategies of the other players. (GNE)
 						<br>
 						* This system is non-square !!!
 						<br>
 						<br>
 						<mark>
-							Note that if a trading system is implemented, the price of the permits is the same for all producers, i.e, 
+							If a trading system is implemented, the prices of the permits are the same for all producers, i.e, 
 						</mark>
 						<br>
 						\[ \phi_p = \phi  \; \; \forall p \]
-						* The system is now square and has a unique NE.
+						* The system is now square and has an unique NE.
 					</p>
 					<p class= "fragment" style="font-size: 15pt; text-align: center;">
 						\[\begin{aligned}
@@ -257,7 +257,7 @@
 
 				<section>
 					<section>
-						<h7>Example 3: Dynamic Game Single Leader </h7>
+						<h7>Example 3: Dynamic Game with a Single Leader </h7>
 						<hTitle>Stackelberg Competition</hTitle>
 						<div class="r-stack">
 							<img class="fragment" src="imgs/cornout/leader.svg" height="300">
@@ -265,7 +265,7 @@
 							<img class="fragment" src="imgs/cornout/consumers.svg" height="300">
 						</div>
 						<p class="small-text">
-							Leader playes first, followers observe and then play a cornout-competition game.
+							Leader plays first, followers observe and then play a cornout-competition game.
 						</p>
 					</section>
 
@@ -287,10 +287,10 @@
 							* Note that the NE problem is now a constraint of the leader problem.
 							<br>
 							<br>	
-							* This is a bilevel problem, where the lower level problem is a NEP.
+							* This is a bilevel problem, where the lower level is a NEP.
 							<br>
 							<br>	
-							* Can be solved a non-linear transformation of the complementarity conditions and solved by a non-linear solver.
+							* Complementarity conditions can be replaced by a non-linear transformation.
 						</p>
 						
 						<div class="small-text fragment">
@@ -334,7 +334,7 @@
 						& - s_1 - C \leq 0 \\
 						\end{aligned} \]
 						</p>
-						MPEC Formulation of Leader at node \(n\) problem:
+						MPEC Formulation of Leader at node \(n\) Problem:
 						<p class="fragment" style="font-size: 15pt; text-align: center;">
 						\[\begin{aligned}
 						&\max_{x_{n}} \pi_{n} x_{n}  \\
@@ -389,9 +389,9 @@
 			<hTitle>Summary</hTitle>
 			<div>
 				<ul style="font-size: 18pt;">
-					<li>Game Theoretical Fomulations allow to model imperfect markets</li>
-					<li>Given convex objetive functions and constraints qualifications, the solution of multiple interdependet optmizations problems can be replaced by their KKT-Conditions </li>
-					<li>GNE problems can lead to non-square problems, real world assumptions might help to eliminate variables.</li>
+					<li>Game Theoretical fomulations allow to model imperfect markets</li>
+					<li>Given convex objetive functions and constraints qualifications, multiple interdependet optmization problems can be replaced by their KKT-Conditions </li>
+					<li>GNE problems can lead to non-square models, real world assumptions might help to eliminate variables.</li>
 					<li>MPECs problem can be solved with non-linear transformation of complementarity constraints</li>
 					<li>Diagonalization can be used to solve EPEC problems</li>
 				</ul>
@@ -422,7 +422,7 @@
 				<img src="imgs/QR.svg" height="150">
 			
 
-				<p>Questions, Comments or Ideias?
+				<p>Questions, Comments or Ideas?
 					<br>
 				<a  href="mailto:mail@juliabarbosa.net">
 					mail@juliabarbosa.net</a>
