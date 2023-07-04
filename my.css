@@ -4,6 +4,9 @@
     text-align: left;
   }
 
+li {
+  margin: 10px;
+}
 
 table, th, td {
   border: 0px solid;

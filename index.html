@@ -21,18 +21,22 @@
 				<section>
 				<div style="position: absolute; top: -10%;
   right: 0; border:10px;">
-					<!--<img src="./imgs/tuda_logo.svg" height="100" >-->
-					<a href="./imgs/tuda_logo.svg" > TEST</a>
+					<img src="./imgs/tuda_logo.svg" height="100" >
 				</div>
-
+				
 				<br>
 				<br>
 				<hTitle>Game-Theoritical Models for Energy Markets</hTitle>
 				<hNameBox> Julia Barbosa</hNameBox>
-				</section>
-
+				<p class = "small-text">
+					<img src="imgs/QR.svg" height="150" >
+					<br>
+					Follow the presentation
+				</p>
+			</section>
+			
+			<section>
 				<section>
-					<section>
 						<hTitle>What is Game Theory? </hTile>
 						<hText> 
 							„Game theory is the study of multiperson decision problems.“
@@ -188,7 +192,7 @@
 							\end{aligned} \]
 							</p>
 						</div>
-						<div class="small-text">
+						<div class="small-text fragment">
 							Implementation in Julia available <a href="https://github.com/JP-Barbosa/GT4EM/blob/main/src/ex1.jl">
 							here </a>.
 						</div>
@@ -306,11 +310,11 @@
 						</h7>
 						<hTitle>Strategic quantity decisions by Generators</hTitle>
 						<div class="r-stack">
-							<img class="fragment" src="./imgs/cornout/leader2.svg" height="300">
-							<img class="fragment" src="imgs/cornout/producers3.svg" height="300">
-							<img class="fragment" src="imgs/cornout/consumers.svg" height="300">
+							<img class="fragment" src="./imgs/cornout/ex4_prod.svg" height="300">
+							<img class="fragment" src="imgs/cornout/ex4_tso.svg" height="300">
+							<img class="fragment" src="imgs/cornout/ex4_demand.svg" height="300">
 						</div>
-						<p class="small-text">
+						<p class="small-text fragment">
 							Two producers A and B (leaders) maximize their profits from energy sales.
 							<br>
 							TSO (follower) maximizes profit from energy arbitrage between nodes.
@@ -318,6 +322,32 @@
 						<p class="small-text">
 							Adapted from Complementarity Modeling in Energy Markets, by Gabriel A., Conejo A., Fuller J., Hobbs B. and Ruiz C. (2013)
 						</p> 
+					</section>
+
+					<section>
+						Formulation of Follower Problem (TSO):
+						<p class="fragment" style="font-size: 15pt; text-align: center;">
+						\[\begin{aligned}
+						&\max_{s_n} \sum_{n \in N} \phi_n s_n \\
+						& \text{s.t.} \\
+						& s_1 - C \leq 0\\
+						& - s_1 - C \leq 0 \\
+						\end{aligned} \]
+						</p>
+						MPEC Formulation of Leader at node \(n\) problem:
+						<p class="fragment" style="font-size: 15pt; text-align: center;">
+						\[\begin{aligned}
+						&\max_{x_{n}} \pi_{n} x_{n}  \\
+						& \text{s.t.} \\
+						& x_{n} - c_{n} \leq 0 \\
+						& x_{n} - s_{n} = D_{n} \; \; \forall n \in N \\
+						& \pi_n = a_n(D_{0,n} - D_n) \; \; \forall n \in N \\
+						& \text{Follower Problem KKT Conditions} \\
+						\end{aligned} \]
+						</p>
+						<mark class ="fragment" style="font-size: 25pt; border: 1pt solid black">
+							Note that we have two MPEC problems, one for each leader &rarr; EPEC.
+						</mark>
 					</section>
 					
 					<section>
@@ -354,7 +384,60 @@
 					</p>
 					</section>
 			</section>
+
+		<section>
+			<hTitle>Summary</hTitle>
+			<div>
+				<ul style="font-size: 18pt;">
+					<li>Game Theoretical Fomulations allow to model imperfect markets</li>
+					<li>Given convex objetive functions and constraints qualifications, the solution of multiple interdependet optmizations problems can be replaced by their KKT-Conditions </li>
+					<li>GNE problems can lead to non-square problems, real world assumptions might help to eliminate variables.</li>
+					<li>MPECs problem can be solved with non-linear transformation of complementarity constraints</li>
+					<li>Diagonalization can be used to solve EPEC problems</li>
+				</ul>
 			</div>
+			</section>
+			<section>
+				
+				<div style="position: absolute; top: -10%;
+  right: 0; border:10px;">
+					<img src="./imgs/tuda_logo.svg" height="100" >
+				</div>
+				
+				<hTitle>Thank you!</hTitle>
+
+				<p>GIT Repo with Julia examples:
+					<br>
+				<a  href="https://github.com/JP-Barbosa/GT4EM">
+					https://github.com/JP-Barbosa/GT4EM
+				</a>
+				</p>
+
+				<p>This Presentation Link
+					<br>
+				<a  href="https://jp-barbosa.github.io/RevealGT4EM/">
+					https://jp-barbosa.github.io/RevealGT4EM/
+				</a>
+				</p>
+				<img src="imgs/QR.svg" height="150">
+			
+
+				<p>Questions, Comments or Ideias?
+					<br>
+				<a  href="malito:mail@juliabarbosa.net">
+					mail@juliabarbosa.net</a>
+				</p>
+			</div>
+		</section>
+<div style="position: absolute; top: -10%;
+  right: 0; border:10px;">
+					<img src="./imgs/tuda_logo.svg" height="100" >
+				</div>
+				
+			</div>
+
+				
+
 		</div>
 
 		<script src="dist/reveal.js"></script>
